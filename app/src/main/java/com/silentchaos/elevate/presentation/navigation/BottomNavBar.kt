@@ -20,6 +20,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Text
@@ -177,7 +178,7 @@ private fun BottomNavItem(
                     spotColor = Color(0xFF3653FF)
                 )
                 .background(
-                    color = if(isSelected) bottomNavItem else Color.Transparent,  // customize
+                    color = if(isSelected) MaterialTheme.colorScheme.surfaceVariant else Color.Transparent,  // customize
                     shape = RoundedCornerShape(40.dp),
                 ),
             verticalAlignment = Alignment.CenterVertically,
@@ -204,7 +205,7 @@ private fun BottomNavItem(
             AnimatedVisibility(visible = isSelected) {
                 Text(
                     text = item.title ?: "",
-                    color = Color.White,
+                    //color = Color.White,
                     modifier = Modifier.padding(start = 8.dp, end = 10.dp),
                     maxLines = 1,
                 )
@@ -239,7 +240,7 @@ fun FlipIcon(
         Icon(
             painter =  if (animationRotation > 90f) activeIcon else inactiveIcon,
             contentDescription = contentDescription,
-            tint = Color.White
+            //tint = Color.White
         )
     }
 }

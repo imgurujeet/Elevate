@@ -35,7 +35,7 @@ fun AppNavigation(navController: NavHostController){
         }
     ){ innerPadding ->
 
-        NavHost(navController=navController, startDestination=Screen.SplashScreen.route){
+        NavHost(navController=navController, startDestination=Screen.HomeScreen.route){
             //Splash Screen
             composable(Screen.SplashScreen.route){
                 SplashScreen(

@@ -19,6 +19,7 @@ import com.silentchaos.elevate.ui.theme.ElevateTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestWindowFeature(android.view.Window.FEATURE_NO_TITLE)
         enableEdgeToEdge()
         setContent {
             val navController = rememberNavController()
