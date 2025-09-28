@@ -3,9 +3,11 @@ package com.silentchaos.elevate.presentation.screens.home
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.windowInsetsPadding
@@ -45,9 +47,9 @@ fun HomeTopBar(){
         modifier = Modifier.fillMaxWidth()
             .background(
                 brush = Brush.linearGradient(
-                    colors = listOf(Color(0xFF001BCE), Color(0xFF5400FF)), // change with your colors
+                    colors = listOf(Color(0xFF5400FF),Color(0xFF3718F5), ), // change with your colors
                     start = Offset(0f, 0f),
-                    end = Offset(Float.POSITIVE_INFINITY,0f) // vertical gradient
+                    end = Offset(Float.POSITIVE_INFINITY,0f)
                 ),
                 shape = RoundedCornerShape(bottomStart = 15.dp, bottomEnd = 15.dp)
             ),
@@ -73,6 +75,7 @@ fun HomeTopBar(){
                 modifier = Modifier.padding(bottom = 16.dp)
 
             )
+            Spacer(modifier = Modifier.height(24.dp))
 
         }
 

@@ -45,9 +45,9 @@ fun ProfileTopBar(){
         modifier = Modifier.fillMaxWidth()
             .background(
                 brush = Brush.linearGradient(
-                    colors = listOf(Color(0xFF001BCE), Color(0xFF5400FF)), // change with your colors
+                    colors = listOf(Color(0xFF5400FF),Color(0xFF3718F5), ), // change with your colors
                     start = Offset(0f, 0f),
-                    end = Offset(Float.POSITIVE_INFINITY,0f) // vertical gradient
+                    end = Offset(Float.POSITIVE_INFINITY,0f)
                 ),
                 shape = RoundedCornerShape(bottomStart = 15.dp, bottomEnd = 15.dp)
             ),
